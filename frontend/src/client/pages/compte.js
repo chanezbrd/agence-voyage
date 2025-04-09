@@ -1,6 +1,7 @@
 import React from "react";
-import "./compte.css";
-import profilePhoto from "./profile-photo.jpg";
+import { Link } from "react-router-dom";
+import "../../styles/compte.css";
+import profilePhoto from "../../assets/images/profile-photo.jpg";
 import { FaPlane, FaHotel, FaLandmark, FaFlag } from "react-icons/fa";
 
 const ReservationItem = ({ icon, text, status }) => {
@@ -36,10 +37,44 @@ const CountryVisitedItem = ({ icon, country, visits, lastVisit }) => {
     </li>
   );
 };
-
-function compte() {
+export default function Compte() {
   return (
     <div className="app">
+      <nav className="navbar">
+        <h2 className="logo">Fly Agency</h2>
+        <ul className="nav-links">
+          <li>
+            <Link to="/destinations" className="nav-link">
+              Vols
+            </Link>
+          </li>
+          <li>
+            <Link to="/voyage_organise" className="nav-link">
+              Voyage organisé
+            </Link>
+          </li>
+          <li>
+            <Link to="/search" className="nav-link">
+              Hotel
+            </Link>
+          </li>
+          <li>
+            <Link to="/compte" className="nav-link">
+              compte
+            </Link>
+          </li>
+          <li>
+            <Link to="/signupform" className="nav-link">
+              S'inscrire
+            </Link>
+          </li>
+          <li>
+            <Link to="/loginform" className="nav-link">
+              Se connecter
+            </Link>
+          </li>
+        </ul>
+      </nav>
       <div className="profile-card">
         <header className="profile-header">
           <div className="avatar-container">
@@ -181,8 +216,91 @@ function compte() {
           </div>
         </div>
       </div>
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-section">
+            <h3>Fly Agency</h3>
+            <p>
+              Explorez le monde avec nos offres exclusives et nos services de
+              qualité.
+            </p>
+          </div>
+          <div className="footer-section">
+            <h4>Navigation</h4>
+            <ul>
+              <li>
+                <a href="/">Accueil</a>
+              </li>
+              <li>
+                <Link to="/vols" className="nav-link">
+                  Vols
+                </Link>
+              </li>
+              <li>
+                <Link to="/voyage_organise" className="nav-link">
+                  Voyage organisé
+                </Link>
+              </li>
+              <li>
+                <a href="#hotels">Hôtels</a>
+              </li>
+              <li>
+                <Link to="/compte" className="nav-link">
+                  compte
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="nav-link">
+                  À propos de nous
+                </Link>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Suivez-nous</h4>
+            <div className="social-icons">
+              <Link
+                to="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook <i className="fab fa-facebook"></i>
+              </Link>
+              <Link
+                to="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-instagram"></i>
+              </Link>
+              <Link
+                to="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter <i className="fab fa-twitter"></i>
+              </Link>
+              <Link
+                to="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn <i className="fab fa-linkedin"></i>
+              </Link>
+            </div>
+            <p className="contact-info">
+              📍 Adresse : 123 Rue Bejaia, Bejaia, Algérie
+            </p>
+            <p className="contact-info">✉️ Email : contact@flyagency.com</p>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; 2025 Fly Agency. Tous droits réservés.</p>
+        </div>
+      </footer>
     </div>
   );
 }
-
-export default compte;
