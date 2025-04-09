@@ -12,6 +12,7 @@ import About from "./client/pages/about";
 import SearchForm from "./client/pages/search";
 import Vols from "./client/pages/vols";
 import Compte from "./client/pages/compte";
+import VoyageOrganise from "./client/pages/voyage_organise";
 
 // 🛠️ Admin Pages
 import AdminDashboard from "./admin/pages/adminDashboard";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/search" element={<SearchForm />} />
         <Route path="/destinations" element={<Vols />} />
         <Route path="/compte" element={<Compte />} />
+        <Route path="/voyage_organise" element={<VoyageOrganise />} />
 
         {/* Admin */}
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
