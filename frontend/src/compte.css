@@ -18,9 +18,13 @@ body {
 .profile-header {
   text-align: center;
   margin-bottom: 24px;
+  height: 350px;
+  margin-top: 50px;
+  background-color: white;
 }
 
 .profile-header h1 {
+  margin-top: 60px;
   color: #2d3436;
   font-size: 28px;
   font-weight: 700;
@@ -242,6 +246,81 @@ ul {
   font-size: 14px;
   font-weight: bold;
   
+}
+/* 🔹 FOOTER */
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  font-size: 14px;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
 }
 
 
