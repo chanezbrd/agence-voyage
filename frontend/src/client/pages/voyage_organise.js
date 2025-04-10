@@ -178,18 +178,7 @@ export default function VoyageOrganise() {
               />
             </div>
 
-            <div className="form-group">
-              <label className="form-label">Participants</label>
-              <input
-                type="number"
-                name="participants"
-                className="form-input"
-                min="1"
-                value={formData.participants}
-                onChange={handleChange}
-                required
-              />
-            </div>
+            
 
             <div className="form-group">
               <label className="form-label">Type de circuit</label>
@@ -206,17 +195,7 @@ export default function VoyageOrganise() {
               </select>
             </div>
 
-            <div className="form-group">
-              <label className="form-label">Message (optionnel)</label>
-              <textarea
-                name="message"
-                className="form-input"
-                rows="3"
-                placeholder="Informations complémentaires..."
-                value={formData.message}
-                onChange={handleChange}
-              />
-            </div>
+           
 
             <button type="submit" className="form-button">
               Réserver
